@@ -1,0 +1,251 @@
+// 公共类
+// font-weight-100 ~ 900
+@for $i from 1 through 9 {
+  .font-weight-#{$i}00 {
+    font-weight: #{$i}00;
+  }
+}
+
+// margin 4个方向 1-10、15、20
+@each $direction,
+  $property
+    in (t: top, r: right, b: bottom, l: left)
+{
+  @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+    15, 20
+  {
+    .m#{$direction}-#{$size} {
+      margin-#{$property}: #{$size}px;
+    }
+  }
+}
+
+// padding 4个方向 1-10、15、20
+@each $direction,
+  $property
+    in (t: top, r: right, b: bottom, l: left)
+{
+  @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+    15, 20
+  {
+    .p#{$direction}-#{$size} {
+      padding-#{$property}: #{$size}px;
+    }
+  }
+}
+
+.m0 {
+  margin: 0;
+}
+.p0 {
+  padding: 0;
+}
+.border-box {
+  box-sizing: border-box;
+}
+
+// 文本对齐
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+// 字体大小
+.font-12 {
+  font-size: 12px;
+}
+.font-14 {
+  font-size: 14px;
+}
+.font-16 {
+  font-size: 16px;
+}
+.font-18 {
+  font-size: 18px;
+}
+.font-20 {
+  font-size: 20px;
+}
+.font-24 {
+  font-size: 24px;
+}
+
+// 文本颜色
+.text-primary {
+  color: var(--text-primary);
+}
+.text-regular {
+  color: var(--text-regular);
+}
+.text-secondary {
+  color: var(--text-secondary);
+}
+.text-placeholder {
+  color: var(--text-placeholder);
+}
+
+// 显示方式
+.flex {
+  display: flex;
+}
+.d-block {
+  display: block;
+}
+.d-inline {
+  display: inline;
+}
+.d-inline-block {
+  display: inline-block;
+}
+.d-none {
+  display: none;
+}
+
+// Flex 布局
+.flex-row {
+  flex-direction: row;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.align-start {
+  align-items: flex-start;
+}
+.align-center {
+  align-items: center;
+}
+.align-end {
+  align-items: flex-end;
+}
+.align-stretch {
+  align-items: stretch;
+}
+.flex-1 {
+  flex: 1;
+}
+
+// 定位
+.pos-relative {
+  position: relative;
+}
+.pos-absolute {
+  position: absolute;
+}
+.pos-fixed {
+  position: fixed;
+}
+.pos-sticky {
+  position: sticky;
+}
+
+// 宽高
+.w-100 {
+  width: 100%;
+}
+.h-100 {
+  height: 100%;
+}
+.w-auto {
+  width: auto;
+}
+.h-auto {
+  height: auto;
+}
+
+// 溢出处理
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-auto {
+  overflow: auto;
+}
+.overflow-scroll {
+  overflow: scroll;
+}
+
+// 文本省略
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.text-ellipsis-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// 光标
+.cursor-pointer {
+  cursor: pointer;
+}
+.cursor-default {
+  cursor: default;
+}
+.cursor-not-allowed {
+  cursor: not-allowed;
+}
+
+// 圆角
+.rounded-sm {
+  border-radius: var(--border-radius-small);
+}
+.rounded {
+  border-radius: var(--border-radius-base);
+}
+.rounded-lg {
+  border-radius: var(--border-radius-large);
+}
+.rounded-full {
+  border-radius: var(--border-radius-circle);
+}
+
+// 阴影
+.shadow {
+  box-shadow: var(--box-shadow-base);
+}
+.shadow-light {
+  box-shadow: var(--box-shadow-light);
+}
+.shadow-dark {
+  box-shadow: var(--box-shadow-dark);
+}
+
+// 过渡动画
+.transition {
+  transition: var(--transition-base);
+}
+.transition-fast {
+  transition: var(--transition-fast);
+}
+.transition-slow {
+  transition: var(--transition-slow);
+}

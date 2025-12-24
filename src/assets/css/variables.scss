@@ -1,0 +1,95 @@
+:root {
+  // 颜色变量
+  --primary-color: #409eff;
+  --success-color: #67c23a;
+  --warning-color: #e6a23c;
+  --danger-color: #f56c6c;
+  --info-color: #909399;
+
+  --text-primary: #303133;
+  --text-regular: #606266;
+  --text-secondary: #909399;
+  --text-placeholder: #c0c4cc;
+
+  --border-base: #dcdfe6;
+  --border-light: #e4e7ed;
+  --border-lighter: #ebeef5;
+  --border-extra-light: #f2f6fc;
+
+  --white: #fff;
+  --black: #000;
+  --bg-color: #ffffff;
+  --bg-page: #f5f7fa;
+  --bg-overlay: rgba(0, 0, 0, 0.5);
+
+  // 字体变量
+  --font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-size-base: 14px;
+  --font-size-sm: 12px;
+  --font-size-lg: 16px;
+  --font-size-extra-large: 18px;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  // 间距变量
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 48px;
+
+  // Padding 变量
+  --padding-xs: 4px;
+  --padding-sm: 10px;
+  --padding-md: 16px;
+  --padding-lg: 24px;
+  --padding-xl: 32px;
+
+  // Margin 变量
+  --margin-xs: 4px;
+  --margin-sm: 10px;
+  --margin-md: 16px;
+  --margin-lg: 24px;
+  --margin-xl: 32px;
+
+  // 圆角变量
+  --border-radius-sm: 2px;
+  --border-radius-md: 4px;
+  --border-radius-lg: 8px;
+  --border-radius-round: 20px;
+  --border-radius-circle: 50%;
+
+  // 阴影变量
+  --box-shadow-base:
+    0 2px 4px rgba(0, 0, 0, 0.12),
+    0 0 6px rgba(0, 0, 0, 0.04);
+  --box-shadow-light: 0 2px 12px 0
+    rgba(0, 0, 0, 0.1);
+  --box-shadow-dark: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+  // 过渡动画
+  --transition-base: all 0.3s ease;
+  --transition-fast: all 0.2s ease;
+  --transition-slow: all 0.5s ease;
+
+  // 响应式断点
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 768px;
+  --breakpoint-md: 992px;
+  --breakpoint-lg: 1200px;
+  --breakpoint-xl: 1920px;
+
+  // Z-index 层级
+  --z-index-dropdown: 1000;
+  --z-index-sticky: 1020;
+  --z-index-fixed: 1030;
+  --z-index-modal-backdrop: 1040;
+  --z-index-modal: 1050;
+  --z-index-popover: 1060;
+  --z-index-tooltip: 1070;
+}
