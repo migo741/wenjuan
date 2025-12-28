@@ -3,5 +3,5 @@
   "semi": false,
   "singleQuote": true,
   "htmlWhitespaceSensitivity": "ignore",
-  "printWidth": 50
+  "printWidth": 80
 }
