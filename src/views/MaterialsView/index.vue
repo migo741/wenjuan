@@ -1,5 +1,5 @@
 <template>
-  <div>组件市场</div>
+  <div>组件市场1</div>
 </template>
 <script setup lang="ts"></script>
 

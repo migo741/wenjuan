@@ -1,5 +1,5 @@
 <template>
-  <div>问卷编辑器main</div>
+  <div>问卷编辑器2</div>
 </template>
 <script setup lang="ts"></script>
 
