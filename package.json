@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.2",
+    "ant-design-vue": "^4.2.6",
     "element-plus": "^2.13.0",
     "install": "^0.13.0",
     "pinia": "^3.0.4",

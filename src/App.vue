@@ -1,6 +1,6 @@
 <template>
   <div class="test pt-20 pb-20 pl-20 pr-20">
-    <h1 class="text-center font-weight-100">问卷调查系统test</h1>
+    <!-- <h1 class="text-center font-weight-100">问卷调查系统test</h1>
     <div class="mb-15">
       <el-button type="primary" :icon="Plus">创建问卷</el-button>
       <el-button type="success" :icon="Compass">组价市场</el-button>
@@ -27,12 +27,32 @@
           <el-button link type="primary" size="small">删除</el-button>
         </template>
       </el-table-column>
-    </el-table>
+    </el-table> -->
+    <!-- 气泡图片（气泡弹出 + 放大镜） -->
+    <div class="image-triggers">
+      <a-popover trigger="hover">
+        <template #content>
+          <MagnifierImage :src="qipao" alt="气泡图片1" />
+        </template>
+        <el-button>查看图片1</el-button>
+      </a-popover>
+
+      <a-popover trigger="hover">
+        <template #content>
+          <MagnifierImage :src="qipao2" alt="气泡图片2" />
+        </template>
+        <el-button>查看图片2</el-button>
+      </a-popover>
+    </div>
   </div>
 </template>
+
 <script setup lang="ts">
 import { Plus, Compass } from '@element-plus/icons-vue'
 import { ref } from 'vue'
+import MagnifierImage from '@/components/MagnifierImage2.vue'
+import qipao from '@/assets/img/qipao.svg'
+import qipao2 from '@/assets/img/qipao2.svg'
 
 const tableData = ref([])
 </script>
